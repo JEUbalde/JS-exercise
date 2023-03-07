@@ -358,36 +358,36 @@ console.log(`We will practice JS code here!`);
 
 // JS - Array Manipulation
 	
-	console.log("Array Manipulation");
+	// console.log("Array Manipulation");
 
-	let products = [];
+	// let products = [];
 
-	console.log("Before Push:");
-	console.log(products);
+	// console.log("Before Push:");
+	// console.log(products);
 
-	// Pop Method
-	console.log("After Push:");
-	products.push("Laptop");
-	console.log(products);
+	// // Pop Method
+	// console.log("After Push:");
+	// products.push("Laptop");
+	// console.log(products);
 
-	products.push("Computer", "Albums", "Lanyards");
-	console.log(products);
+	// products.push("Computer", "Albums", "Lanyards");
+	// console.log(products);
 
-	// Pop Method
-	console.log("After Pop:");
-	products.pop();
-	console.log(products);
-
-
-	// Unshift Method
-	products.unshift("Photocards", "Lightstick", "Mago", "Apple", "Posters", "Cellphones", "Apple", "");
-	console.log(products);
+	// // Pop Method
+	// console.log("After Pop:");
+	// products.pop();
+	// console.log(products);
 
 
-	// Shift Method
-	let removedItem = products.shift();
-	console.log(products);
-	console.log(removedItem);
+	// // Unshift Method
+	// products.unshift("Photocards", "Lightstick", "Mago", "Apple", "Posters", "Cellphones", "Apple", "");
+	// console.log(products);
+
+
+	// // Shift Method
+	// let removedItem = products.shift();
+	// console.log(products);
+	// console.log(removedItem);
 
 
 	// Spice Method
@@ -411,75 +411,153 @@ console.log(`We will practice JS code here!`);
 
 // Non mutator
 	// indexOf
-	console.log(products);
-	console.log(products.indexOf("Apple"));
-	console.log(products.lastIndexOf("Apple"));
+	// console.log(products);
+	// console.log(products.indexOf("Apple"));
+	// console.log(products.lastIndexOf("Apple"));
 
 
-	// Slice Method
-	console.log("Slice Method:");
-	// (starting index, last index --- last index is not included.Laging may margin of 1 element)
-	let newProducts = products.slice(1, 5);
-	console.log(newProducts);
+	// // Slice Method
+	// console.log("Slice Method:");
+	// // (starting index, last index --- last index is not included.Laging may margin of 1 element)
+	// let newProducts = products.slice(1, 5);
+	// console.log(newProducts);
 
 
-	// toString()
+	// // toString()
 
-	// Concat Method
-	let freebies = ["Water Dispenser", "Birth Certificate"]	
-	let newCombo = newProducts.concat(freebies, "Hair Dryer", "Fingerprint scanner");
-	console.log(newCombo);
+	// // Concat Method
+	// let freebies = ["Water Dispenser", "Birth Certificate"]	
+	// let newCombo = newProducts.concat(freebies, "Hair Dryer", "Fingerprint scanner");
+	// console.log(newCombo);
 
 
-	// Join Method
-	console.log(newCombo.join(", "));
+	// // Join Method
+	// console.log(newCombo.join(", "));
 
 
 
 // Iteration Methods
 	// forEach()
-	products.forEach(item => {
-		console.log(item + " is on Sale!");	
-	})
+	// products.forEach(item => {
+	// 	console.log(item + " is on Sale!");	
+	// })
 
 
-	// map()
-	console.log("Map Method:");
-	let onSaleItems = products.map(function(item){
-		onSale = "new " + item;
-		console.log("New Value: " + onSale);
-	})
+	// // map()
+	// console.log("Map Method:");
+	// let onSaleItems = products.map(function(item){
+	// 	onSale = "new " + item;
+	// 	console.log("New Value: " + onSale);
+	// })
 
 
-	// every()
-	let allTrue = products.every(item => {
-		return (item != "");
-	})
-	console.log(allTrue);
+	// // every()
+	// let allTrue = products.every(item => {
+	// 	return (item != "");
+	// })
+	// console.log(allTrue);
 
 
-	// some()
-	let someTrue = products.some(item =>{
-		return (item == "");
-	})
-	console.log(someTrue);
+	// // some()
+	// let someTrue = products.some(item =>{
+	// 	return (item == "");
+	// })
+	// console.log(someTrue);
 
 
-	// filter()
-	let noEmptyProducts = products.filter(item => {
-		return (item != "");
-	})
-	console.log(noEmptyProducts);
+	// // filter()
+	// let noEmptyProducts = products.filter(item => {
+	// 	return (item != "");
+	// })
+	// console.log(noEmptyProducts);
 
 
-	// includes()
-	let magoFound = products.includes("Mago");
-	console.log("Is Mago visible in the array? " + magoFound);
+	// // includes()
+	// let magoFound = products.includes("Mago");
+	// console.log("Is Mago visible in the array? " + magoFound);
 
 
-	// reduce()
-	let combinedProducts = products.reduce((accumulator, currentValue) => {
-		return accumulator + currentValue;
-	})
+	// // reduce()
+	// let combinedProducts = products.reduce((accumulator, currentValue) => {
+	// 	return accumulator + currentValue;
+	// })
 
-	console.log(combinedProducts);
+	// console.log(combinedProducts);
+
+
+	// Activity
+	// let registeredStudents = [
+	// 	"Greg",
+	// 	"Max",
+	// 	"Sabrina",
+	// 	"Tom",
+	// 	"Sarah"
+	// 	];
+
+	// let friends = [];
+
+	// console.log("List of registered students:");
+	// console.log(registeredStudents);
+
+	// // Functions
+	// 	// register
+	// function register(username){
+	// 	newUser = registeredStudents.includes(username);
+	// 	if(newUser == 0){
+	// 		registeredStudents.push(username);
+	// 		alert("Thank you for registering, " + username + "!");
+	// 	}
+	// 	else{
+	// 		alert("Sorry, username already exists!");
+	// 	}
+	// }
+
+	// 	// add name to friends
+	// function addFriend(newFriend){
+	// 	addedFriend = registeredStudents.includes(newFriend);
+	// 	if(addedFriend == 1){
+	// 		friends.push(newFriend);
+	// 		alert("You have added " + newFriend + " in your friend list.");
+	// 	}
+	// 	else{
+	// 		alert("User not found");
+	// 	}
+	// }
+
+	// // Show friends
+	// function showFriends(){
+	// 	if(friends.length == 0){
+	// 		alert("You currently have 0 friends. Please add first.");
+	// 	}
+	// 	else{
+	// 		for(let i = 0; i < friends.length; i++){
+	// 			console.log(friends.join("\n"));
+	// 		}
+	// 	}
+	// }
+
+	// // Display Number of Friends
+	// function showNumberOfFriends(){
+	// 	if(friends.length == 0){
+	// 		alert("You currently have 0 friends. Please add first.");
+	// 	}
+	// 	else{
+	// 		alert("You have " + friends.length + " friends");
+	// 	}
+	// }
+
+	// // Delete a Friend
+	// function deleteFriend(){
+	// 	if(friends.length == 0){
+	// 		alert("You currently have 0 friends. Please add first.");
+	// 	}
+	// 	else{
+	// 		friends.pop();
+	// 		console.log(friends);
+	// 	}
+	// }
+
+
+// JS - Objects
+	
+	console.log("Continue on JavaScript Objects");
