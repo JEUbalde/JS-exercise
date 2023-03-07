@@ -380,7 +380,7 @@ console.log(`We will practice JS code here!`);
 
 
 	// Unshift Method
-	products.unshift("Photocards", "Lightstick", "Mago", "Apple", "Posters", "Cellphones", "Apple");
+	products.unshift("Photocards", "Lightstick", "Mago", "Apple", "Posters", "Cellphones", "Apple", "");
 	console.log(products);
 
 
@@ -435,5 +435,51 @@ console.log(`We will practice JS code here!`);
 	console.log(newCombo.join(", "));
 
 
+
 // Iteration Methods
-	
+	// forEach()
+	products.forEach(item => {
+		console.log(item + " is on Sale!");	
+	})
+
+
+	// map()
+	console.log("Map Method:");
+	let onSaleItems = products.map(function(item){
+		onSale = "new " + item;
+		console.log("New Value: " + onSale);
+	})
+
+
+	// every()
+	let allTrue = products.every(item => {
+		return (item != "");
+	})
+	console.log(allTrue);
+
+
+	// some()
+	let someTrue = products.some(item =>{
+		return (item == "");
+	})
+	console.log(someTrue);
+
+
+	// filter()
+	let noEmptyProducts = products.filter(item => {
+		return (item != "");
+	})
+	console.log(noEmptyProducts);
+
+
+	// includes()
+	let magoFound = products.includes("Mago");
+	console.log("Is Mago visible in the array? " + magoFound);
+
+
+	// reduce()
+	let combinedProducts = products.reduce((accumulator, currentValue) => {
+		return accumulator + currentValue;
+	})
+
+	console.log(combinedProducts);
