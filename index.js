@@ -560,4 +560,208 @@ console.log(`We will practice JS code here!`);
 
 // JS - Objects
 	
-	console.log("Continue on JavaScript Objects");
+	// console.log("Continue on JavaScript Objects");
+
+	// let laptop = {
+	// 	name: "Huawei D14",
+	// 	manufacturedDate: 2020,
+	// 	features: ["fingerprint scanner", "play games", "windows 11"],
+	// 	isWorking: true,
+	// 	owner: {
+	// 		ownerName: "Ed",
+	// 		yearOfOwnage: 2,
+	// 	}
+	// }
+
+	// console.log(laptop);
+	// console.log(laptop.name);
+	// console.log(laptop.features);
+	// console.log(laptop.features[2]);
+	// console.log(laptop.owner.ownerName);
+	// console.log(laptop.owner.yearOfOwnage);
+
+
+	// Constructor Function
+	// function Album(name, artist, publishedDate, noOfSongs){
+	// 	this.name = name,
+	// 	this.artist = artist,
+	// 	this.publishedDate = publishedDate,
+	// 	this.noOfSongs = noOfSongs
+	// }
+
+	// let bopBop = new Album("Bop Bop", "VIVIZ", "2019", 6);
+	// console.log(bopBop);
+
+	// let loveade = new Album("Summer Vibe", "VIVIZ", "2020", 6);
+	// console.log(loveade);
+
+	// let twice = new Object();
+	// console.log(twice);
+
+	// let discography = [bopBop, loveade];
+	// console.log(discography[1].name);
+	// console.log(discography[0].artist + " - " + discography[0].name);
+
+
+	// let person = {
+	// 	name: "John Doe",
+	// 	talk: function(){
+	// 		console.log("Hello! My name is " + this.name)
+	// 	}
+	// }
+
+	// console.log(person);
+	// person.talk();
+
+	// Activity
+	// let trainer = {
+	// 	name: "Ed",
+	// 	age: "23",
+	// 	pokemon: ["Eevee", "Vaporeon", "Gengar"],
+	// 	friends: {
+	// 		hoenn: ["Max", "May"],
+	// 		kanto: ["Brock", "Misty"]
+	// 	}
+	// }
+
+	// trainer.talk = function(){
+	// 	console.log("Let's go, Eevee!");
+	// }
+
+	// console.log(trainer);
+	// console.log(trainer.pokemon);
+
+
+
+	// function Pokemon(name, level){
+	// 	this.name = name;
+	// 	this.level = level;
+	// 	this.health = level * 2;
+	// 	this.attack = level;
+
+	// 	this.faint = function(){
+	// 		console.log(this.name + " fainted!");
+	// 	}
+
+	// 	this.tackle = function(targetPokemon){
+	// 		console.log(this.name + " tackled " + targetPokemon.name);
+
+	// 		targetPokemon.health = targetPokemon.health - this.attack;
+
+	// 		console.log(targetPokemon.name + "'s health is now reduced to " + targetPokemon.health);
+
+	// 		if(targetPokemon.health <= 0){
+	// 			targetPokemon.faint();
+	// 		}
+	// 	}
+	// }
+
+	// let pikachu = new Pokemon("Pikachu", 12);
+	// let chikorita = new Pokemon("Chikorita", 24);
+
+	// console.log(pikachu);
+	// console.log(chikorita);
+
+	// chikorita.tackle(pikachu);
+	// console.log(pikachu);
+
+
+// JS - ES6
+
+	// console.log("ES6 Updates");
+
+	// let num1 = Math.pow(3, 2); //9
+	// console.log(num1);
+
+	// let num2 = 2;
+	// console.log(num2);
+
+	// console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}`);
+
+
+	// // Destructure in Array
+	// let pokemon = ["Pikachu", "Gengar", "Ralts"];
+	// console.log(`My current roster of pokemons are:`);
+	// console.log(pokemon);
+
+	// let [pikachu, gengar, ralts] = pokemon;
+	// console.log(pikachu);
+	// console.log(gengar);
+	// console.log(ralts);
+
+
+	// // Destructuring an Object
+	// console.log(`Object Destructuring:`);
+	// let trainer = {
+	// 	firstname: "John Edward",
+	// 	middlename: "Del Rosario",
+	// 	lastname: "Ubalde"
+	// }
+
+	// console.log(trainer);
+
+	// let fName = trainer.firstname;
+	// let mName = trainer.middlename;
+	// let lName = trainer.lastname;
+
+	// console.log(fName);
+	// console.log(mName);
+	// console.log(lName);
+
+
+
+	// // Arrow Functions
+	// 	/*Syntax:
+	// 	let/const functionName = () => {
+	// 		statements
+	// 	}*/
+
+	// let hello = () => {
+	// 	console.log("Hello World!");
+	// }
+
+	// hello();
+
+	// let sum = (num1, num2) => {
+	// 	return num1 + num2;
+	// }
+
+	// console.log(sum(num1, num2));
+
+
+	// console.log("Activity for ES6 Updates:");
+
+	// // Get the cube of the number
+	// let getCube = prompt(console.log("Enter number to get cube equivalent:"));
+	// let cube = Math.pow(getCube, 3);
+	// console.log(`The cube of ${getCube} is ${cube}`);
+
+
+	// let address = [11, "Lisbon Street", "SMW IV", "Dasma", "Cavite"];
+	// let [housenumber, street, village, city, province] = address;
+	// console.log(`Hi! I live in ${housenumber} ${street} ${village} ${city} ${province}.`);
+
+
+	// let products = ["Album", "Photocards", "Poster", "Coaster"];
+	// products.forEach((product) => console.log(product));
+
+	// console.log("2nd iteration of products:");
+	// products.forEach((product) => {
+	// 	console.log(product);
+	// })
+
+	// class album{
+	// 	constructor(title, artist, year){
+	// 		this.title = title;
+	// 		this.artist = artist;
+	// 		this.year = year;
+	// 	}
+	// }
+
+	// let bopBop = new album("Beam of Prism", "VIVIZ", 2019);
+	// console.log(bopBop);
+
+
+// JS - Introduction to JSON
+
+	console.log("Introduction to JSON");
